@@ -1,9 +1,11 @@
 const login = (user) => {
  switch(user.role) {
   case "student":
-   return "Welcome Student";
+   return "Student Dashboard";
+  case "admin":
+   return "Admin Dashboard";
   default:
-   return "Access Denied";
+   return "Unauthorized";
  }
 };
 
