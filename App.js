@@ -1,4 +1,4 @@
-function login(user) {
+ function login(user) {
  if (user.type === "student") {
   return "Student Panel";
  }
