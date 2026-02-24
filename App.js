@@ -1,8 +1,8 @@
- function login(user) {
- if (user.type === "student") {
-  return "Student Panel";
+function login(user) {
+ if (user.role === "admin") {
+  return "Admin Panel";
  }
- return "No Access";
+ return "Access Denied";
 }
 
 module.exports = login;
